@@ -1,0 +1,34 @@
+package com.app.samples.springboot.exception;
+
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ResourceNotFoundException.
+ */
+@ResponseStatus
+public class ResourceNotFoundException extends RuntimeException {
+
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * Instantiates a new resource not found exception.
+	 *
+	 * @param message the message
+	 */
+	public ResourceNotFoundException(String message) {
+		super(message);
+	}
+	
+	/**
+	 * Instantiates a new resource not found exception.
+	 *
+	 * @param message the message
+	 * @param throwable the throwable
+	 */
+	public ResourceNotFoundException(String message, Throwable throwable) {
+		super(message,throwable);
+	}
+	
+}
